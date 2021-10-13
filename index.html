@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./script.js"></script>
+    <title>Library Program - Add Books</title>
+  </head>
+  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <main>
+      <div class="add-book">
+        <header>
+          <h1>Add new book</h1>
+        </header>
+        <form>
+          <div class="input-field">
+            <label for="title"><h2>Title</h2></label>
+            <input type="text" id="title" name="title" required />
+          </div>
+          <!-- End of input field-->
+
+          <div class="input-field">
+            <label for="author"><h2>Author</h2></label>
+            <input type="text" id="author" name="author" />
+          </div>
+
+          <div class="input-field">
+            <label for="Pages"><h2>Pages</h2></label>
+            <input type="number" id="pages" name="pages" />
+          </div>
+          <!-- End of input field-->
+          <div class="read-container">
+            <h2 id="read-text">Have you read it?</h2>
+            <input type="checkbox" id="read" name="read" />
+          </div>
+          <!-- End of input field-->
+          <div class="submit">
+            <button type="submit"><h2>Submit</h2></button>
+          </div>
+        </form>
+      </div>
+      <!-- End of add book -->
+
+      <div class="book-container"></div>
+    </main>
+  </body>
+</html>
